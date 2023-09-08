@@ -1,31 +1,33 @@
 /*
- * File:3-print_alphabets.c
- * Author:Adnan Gard
+ * File: 3-print_alphabets.c
+ * Author: Adnan Gard
  */
+
 #include <stdio.h>
+
 /**
- * main -Prints alphabet in both capital and small
+ * main - Prints the alphabet in both lowercase and uppercase
  *
- * Return:Always 0.
+ * Return: Always 0.
  */
 int main(void)
-{       
-        char letter;
+{
+	char small_big;
 
-	letter = 'a';
+	small_big = 'a';
 
-	while (letter <= 'z')
+	while (small_big <= 'z')
 	{
-		putchar(letter);
-		letter++;
+		putchar(small_big);
+		small_big++;
 	}
 
-	letter = 'A';
+	small_big = 'A';
 
-	while (letter <= 'Z')
+	while (small_big <= 'Z')
 	{
-		putchar(letter);
-		letter++;
+		putchar(small_big);
+		small_big++;
 	}
 
 	putchar('\n');
