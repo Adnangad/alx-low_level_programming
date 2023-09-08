@@ -11,17 +11,16 @@
 int main(void)
 {       
         char small = 'a';
-	char big = 'A';
                 while ('a' <= 'z')
 		{
 			putchar(small);
 			small++;
 		}
-	
+		small= 'A';	
 		while ('A' <= 'Z')
 		{
-			putchar(big);
-			big++;
+			putchar(small);
+			small++;
 		}
 	putchar('\n');
 	return (0);
