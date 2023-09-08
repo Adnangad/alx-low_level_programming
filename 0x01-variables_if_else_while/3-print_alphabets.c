@@ -10,18 +10,24 @@
  */
 int main(void)
 {       
-        char small = 'a';
-                while ('a' <= 'z')
-		{
-			putchar(small);
-			small++;
-		}
-		small= 'A';	
-		while ('A' <= 'Z')
-		{
-			putchar(small);
-			small++;
-		}
+        char letter;
+
+	letter = 'a';
+
+	while (letter <= 'z')
+	{
+		putchar(letter);
+		letter++;
+	}
+
+	letter = 'A';
+
+	while (letter <= 'Z')
+	{
+		putchar(letter);
+		letter++;
+	}
+
 	putchar('\n');
 	return (0);
 }
