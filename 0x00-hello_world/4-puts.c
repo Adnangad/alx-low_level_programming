@@ -1,5 +1,5 @@
 /*
- * 4-puts.c
+ * File:4-puts.c
  * Author:Adnan
  * Description:program prints text
  * Date:September 7th 2023
@@ -10,10 +10,8 @@
  *
  * Return: Always 0.
  */
-int main (void)
-{
+int main(void){
 	
 	puts("\"Programming is like building a multilingual puzzle");
-
 	return (0);
 }
