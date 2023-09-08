@@ -2,11 +2,9 @@
  * File: 1-last_digit.c
  * Author: Adnan Gard
  */
-
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
  * main - Determines the last digit of a random number
  *
@@ -18,7 +16,6 @@ int main(void)
 
     srand(time(0));
     n = rand() - RAND_MAX / 2;
-
     if ((n % 10) > 5)
     {
         printf("Last digit of %d is %d and is greater than 5\n",
