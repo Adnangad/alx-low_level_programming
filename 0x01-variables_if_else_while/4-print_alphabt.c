@@ -12,18 +12,18 @@
  */
 int main(void)
 {
-    char small = 'a';
+	char small = 'a';
 
-    while (small <= 'z')
-    {
-        if (small != 'e' && small != 'q')
-        {
-            putchar(small);
-        }
-        small++;
-    }
+	while (small <= 'z')
+	{
+		if (small != 'e' && small != 'q')
+		{
+			putchar(small);
+		}
+		small++;
+	}
 
-    putchar('\n');
+	putchar('\n');
 
-    return (0);
+	return (0);
 }
