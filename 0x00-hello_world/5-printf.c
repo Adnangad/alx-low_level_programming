@@ -1,6 +1,7 @@
 /*
  * File:5-prints.c
  * Author:Adnan Gard
+ * Description:It demonstrates printf function
  */
 #include <stdio.h>
 /**
