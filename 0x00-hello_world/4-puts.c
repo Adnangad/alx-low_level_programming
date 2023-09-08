@@ -11,7 +11,8 @@
  */
 int main ()
 {
-	const char *message="Programming is like building a multilingual puzzle\n";
-	puts(message);//prints to the screen
+	
+	puts("Programming is like building a multilingual puzzle\n");
+	getchar();
 	return 0;
 }
