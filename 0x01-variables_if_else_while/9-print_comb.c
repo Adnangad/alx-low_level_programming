@@ -17,10 +17,12 @@ int main(void)
 	while (list <= '9')
 	{
 		putchar(list);
+		if (list < '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		list++;
-
-		putchar(',');
-		putchar(' ');
 	}
 
 	putchar('\n');
