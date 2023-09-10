@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFILE -o 0-main.s
+export CFILE=0-main.c | gcc -S $CFILE -o 0-main.s | ./100-intel
