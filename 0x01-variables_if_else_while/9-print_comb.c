@@ -12,7 +12,7 @@
  */
 int main(void)
 {
-	char list = '0';
+	int list = '0';
 
 	while (list <= '9')
 	{
