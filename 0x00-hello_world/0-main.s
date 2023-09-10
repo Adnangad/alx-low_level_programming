@@ -1,4 +1,5 @@
 	.file	"0-main.c"
+	.intel_syntax noprefix
 	.text
 	.section	.rodata
 .LC0:
@@ -12,23 +13,23 @@ main:
 .LFB0:
 	.cfi_startproc
 	endbr64
-	pushq	%rbp
+	push	rbp
 	.cfi_def_cfa_offset 16
 	.cfi_offset 6, -16
-	movq	%rsp, %rbp
+	mov	rbp, rsp
 	.cfi_def_cfa_register 6
-	subq	$16, %rsp
-	leaq	.LC0(%rip), %rdi
-	movl	$0, %eax
+	sub	rsp, 16
+	lea	rdi, .LC0[rip]
+	mov	eax, 0
 	call	printf@PLT
-	leaq	.LC1(%rip), %rdi
-	movl	$0, %eax
+	lea	rdi, .LC1[rip]
+	mov	eax, 0
 	call	printf@PLT
-	movb	$97, -1(%rbp)
-	movsbl	-1(%rbp), %eax
-	movl	%eax, %edi
+	mov	BYTE PTR -1[rbp], 97
+	movsx	eax, BYTE PTR -1[rbp]
+	mov	edi, eax
 	call	putchar@PLT
-	movl	$0, %eax
+	mov	eax, 0
 	leave
 	.cfi_def_cfa 7, 8
 	ret
