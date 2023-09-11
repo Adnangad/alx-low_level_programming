@@ -13,9 +13,11 @@
 int main(void)
 {
 	int num = 0;
+
 	while (num < 9)
 	{
 		int num2 = num + 1;
+
 		while (num2 <= 9)
 		{
 			putchar(num + '0');
