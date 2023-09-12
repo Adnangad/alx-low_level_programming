@@ -21,7 +21,6 @@ void print_alphabet_x10(void)
 			name++;
 		}		
 		putchar('\n');
-		rep++;		
+		rep++;
 	}
-
 }
