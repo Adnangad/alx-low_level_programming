@@ -12,12 +12,15 @@
  */
 int main()
 {
-	int rep = 0;
-
-	while (rep <= 10)
-	{
-		print_alphabet_x10();
-		rep++;
-	}
+	print_alphabet_x10();
+	print_alphabet_x10();
+	print_alphabet_x10();
+	print_alphabet_x10();
+	print_alphabet_x10();
+	print_alphabet_x10();
+	print_alphabet_x10();
+	print_alphabet_x10();
+	print_alphabet_x10();
+	print_alphabet_x10();
 	return (0);
 }
