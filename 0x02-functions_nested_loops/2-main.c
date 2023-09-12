@@ -12,15 +12,12 @@
  */
 int main()
 {
-	print_alphabet_x10(10);
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
+	int i = 0;
+
+	while (i <= 0)
+	{
+		print_alphabet_x10();
+		i++;
+	}
 	return (0);
 }
