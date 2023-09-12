@@ -10,7 +10,7 @@
  *
  * Return:Always 0.
  */
-int main(void)
+int main()
 {
 	print_alphabet();
 	return (0);
