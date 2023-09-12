@@ -6,7 +6,7 @@
 #include "main.h"
 
 /**
- * main - prints alphabet
+ * main - Prints alphabet
  *
  * Return:Always 0.
  */
