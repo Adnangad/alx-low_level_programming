@@ -1,0 +1,26 @@
+/*
+ * File:3-main.c
+ * Author:Adnan
+ */
+
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * main - checks for lowercase
+ *
+ * Return:Always 0.
+ */
+int main(void)
+{
+	int r;
+
+	r = _islower('H');
+	putchar(r + '0');
+	r = _islower('o');
+	putchar(r + '0');
+	r = _islower(108);
+	putchar(r + '0');
+	putchar('\n');
+	return (0);
+}
