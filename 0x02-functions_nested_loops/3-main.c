@@ -1,19 +1,27 @@
+/*
+ * File:3-main.c
+ * Author:Adnan
+ */
+
+#include "main.h"
+#include "_putchar.h"
+#include <stdio.h>
+
 /**
- * _islower(int c) - checks for lower
+ * main - checks for lowercase
  *
  * Return:Always 0.
  */
-
-#include <ctype.h>
-
-int _islower(int c)
+int main(void)
 {
-	if (islower(c))
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	int r;
+
+	r = _islower('H');
+	_putchar(r + '0');
+	r = _islower('o');
+	_putchar(r + '0');
+	r = _islower(108);
+	_putchar(r + '0');
+	_putchar('\n');
+	return (0);
 }
