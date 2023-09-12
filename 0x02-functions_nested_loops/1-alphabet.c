@@ -2,7 +2,7 @@
  * File:1-alphabet.c
  * Author:Adnan
  */
-#include <stdio.h>
+
 #include "main.h"
 
 /**
