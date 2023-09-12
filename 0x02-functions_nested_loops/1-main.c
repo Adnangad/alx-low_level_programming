@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-void alpha()
+void print_alphabet()
 {
 	char name = 'a';
 

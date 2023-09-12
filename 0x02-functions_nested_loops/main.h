@@ -1,6 +1,6 @@
 #ifndef MYHEADER_H
 #define MYHEADER_H
 
-void alpha();
+void print_alphabet();
 
 #endif

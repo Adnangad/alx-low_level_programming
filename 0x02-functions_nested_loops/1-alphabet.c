@@ -2,7 +2,7 @@
  * File:1-alphabet.c
  * Author:Adnan
  */
-
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -12,6 +12,6 @@
  */
 int main(void)
 {
-	alpha();
+	print_alphabet();
 	return (0);
 }
