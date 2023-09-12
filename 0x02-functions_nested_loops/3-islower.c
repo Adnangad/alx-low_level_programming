@@ -1,5 +1,6 @@
 /**
- * _islower(int c) - checks for lower
+ * _islower - checks for lower
+ * @c:Character to be checked
  *
  * Return:Always 0.
  */
