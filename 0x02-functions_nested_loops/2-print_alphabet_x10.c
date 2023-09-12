@@ -9,12 +9,19 @@
 
 void print_alphabet_x10(void)
 {
-	char name = 'a';
+	int rep = 0;
 
-	while (name <= 'z')
+	while (rep < 10)
 	{
-		putchar(name);
-		name++;
+		char name = 'a';
+
+		while (name <= 'z')
+		{
+			putchar(name);
+			name++;
+		}		
+		putchar('\n');
+		rep++;		
 	}
-	putchar('\n');
+
 }
