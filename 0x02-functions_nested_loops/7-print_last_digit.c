@@ -4,27 +4,21 @@
  */
 
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_last_digit - prints the last digit
- * @n:the number to be examined
+ * print_last_digit - Prints the last digit of a number.
+ * @n: The number to be checked
  *
- * Return:returns the last digit
+ * Return: Value of the last digit.
  */
 int print_last_digit(int n)
 {
-	int las = n % 10;
+	int last_digit = n % 10;
 
-	if (las >= 0)
-	{
-		printf("%d", las);
-	}
-	else if (las < 0)
-	{
-		las = -las;
+	if (last_digit < 0)
+		last_digit *= -1;
 
-		printf("%d", las);
-	}
-	return (las);
+	_putchar(last_digit + '0');
+
+	return (last_digit);
 }
