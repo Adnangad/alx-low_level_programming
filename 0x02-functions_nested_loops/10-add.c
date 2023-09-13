@@ -2,6 +2,8 @@
 
 /**
  * add - ads numbers
+ * @a-first number to be put
+ * @b-second input number
  *
  * Return:returns the inputs.
  */
