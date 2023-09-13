@@ -9,6 +9,7 @@
 
 /**
  * _abs - checks for absolute value
+ * @c:the value to be checked
  *
  * Return:Absolute value
  */
@@ -16,15 +17,15 @@ int _abs(int c)
 {
 	if (c < 0)
 	{
-		return -c;
+		return (-c);
 	}
 	else if (c > 0)
 	{
-		return c;
+		return (c);
 	}
 	else
 	{
-		return 0;
+		return (0);
 	}
 }
 
