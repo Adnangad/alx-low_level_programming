@@ -15,13 +15,13 @@ void jack_bauer(void)
 {
 	int hours = 0;
 
-	while (hours <= 24)
+	while (hours <= 23)
 	{
 		int mins = 0;
 
 		while (mins <= 59)
 		{
-			printf("%02d:%02d\n", hours , mins);
+			printf("%02d:%02d\n", hours, mins);
 			mins++;
 		}
 		hours++;
