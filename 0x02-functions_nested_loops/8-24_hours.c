@@ -1,30 +1,28 @@
 /*
- * File:8-24_hours.c
+ * File: 8-24_hours.c
  * Author:Adnan
  */
 
 #include "main.h"
-#include <stdio.h>
 
 /**
- * jack_bauer - prints minutes of the day
- *
- * Return:time
+ * jack_bauer - Prints every minute of the day of
+ *              Jack Bauer, starting from 00:00 to 23:59.
  */
 void jack_bauer(void)
 {
-	int hours = 0;
+	int hour, minute;
 
-	while (hours <= 23)
+	for (hour = 0; hour <= 23; hour++)
 	{
-		int mins = 0;
-
-		while (mins <= 59)
+		for (minute = 0; minute <= 59; minute++)
 		{
-			printf("%02d:%02d\n", hours, mins);
-			mins++;
+			_putchar((hour / 10) + '0');
+			_putchar((hour % 10) + '0');
+			_putchar(':');
+			_putchar((minute / 10) + '0');
+			_putchar((minute % 10) + '0');
+			_putchar('\n');
 		}
-		hours++;
 	}
-	printf("\n");
 }
