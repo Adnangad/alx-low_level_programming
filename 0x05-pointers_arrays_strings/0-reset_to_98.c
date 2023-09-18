@@ -3,7 +3,7 @@
 
 /**
  * reset_to_98 - dereferences the pointer
- * @*n:the int to be dereferenced
+ * @n:the int to be dereferenced
  *
  * Return:none.
  */
