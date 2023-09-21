@@ -13,5 +13,5 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	char *capy = strncpy(dest, src, n);
 
-	return (capy);
+	return capy;
 }
