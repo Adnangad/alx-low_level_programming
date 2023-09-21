@@ -17,5 +17,5 @@ char *string_toupper(char *s)
 		s[i] = (char) toupper ((int) s[i]);
 		i++;
 	}
-	return (s);
+	return s;
 }
