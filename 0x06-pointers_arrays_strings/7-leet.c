@@ -1,7 +1,4 @@
 #include "main.h"
-#include "_putchar.h"
-#include <stdio.h>
-#include <string.h>
 
 /**
  * leet - encodes diff letters
@@ -12,23 +9,21 @@
 char *leet(char *s)
 {
 	int i = 0;
-
-	char alpa[26] = {
-		'4', 'B', 'B', 'D', '3', 'F',
-		'G', 'H', 'I', 'J', 'K', '1',
-		'M', 'N', '0', 'P', 'Q', 'R',
-		'S', '7', 'U', 'V', 'W', 'X',
-		'Y', 'Z'
-	};
+	char a[] = "aAeEoOtTlL";
+	char n[] = "4433007711";
 
 	while (s[i] != '\0')
 	{
-		char d = s[i];
-		int place = d - 'a';
+		int j = 0;
 
-		if (place >= 0 && place < 26)
+		while (j < 10)
 		{
-			s[i] =  alpa[place];
+			if (s[i] == a[j])
+			{
+				s[i] = n[j];
+				break;
+			}
+			j++;
 		}
 		i++;
 	}

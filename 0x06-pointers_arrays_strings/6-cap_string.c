@@ -43,11 +43,7 @@ char *cap_string(char *s)
 		{
 			s[i] = (char) toupper((int)s[i]);
 		}
-		if ((s[i - 1] == 0 || s[i - 1] == '\n') &&
-			(s[i] != 0 && s[i] != '\n'))
-		{
-			s[i] = (char) toupper((int)s[i]);
-		}
+		
 		i++;
 	}
 	return (s);
