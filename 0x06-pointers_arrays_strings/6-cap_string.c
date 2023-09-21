@@ -13,31 +13,38 @@ char *cap_string(char *s)
 
 	while (s[i] != '\0')
 	{
-		if (s[i - 1] == ' ' || s[i - 1] == '\t')
+		if ((s[i - 1] == ' ' || s[i - 1] == '\t') &&
+				(s[i] != ' ' && s[i] != '\t'))
 		{
 			s[i] = (char) toupper((int)s[i]);
 		}
-		if (s[i - 1] == ',' || s[i - 1] == ';')
+		if ((s[i - 1] == ',' || s[i - 1] == ';') &&
+			(s[i] != ',' && s[i] != ';'))
 		{
 			s[i] = (char) toupper((int)s[i]);
 		}
-		if (s[i - 1] == '.' || s[i - 1] == '!')
+		if ((s[i - 1] == '.' || s[i - 1] == '!') &&
+			(s[i] != '.' && s[i] != '!'))
 		{
 			s[i - 1] = (char) toupper((int)s[i]);
 		}
-		if (s[i - 1] == '?' || s[i - 1] == '"')
+		if ((s[i - 1] == '?' || s[i - 1] == '"') &&
+			(s[i] != '?' && s[i] != '"'))
 		{
 			s[i] = (char) toupper((int)s[i]);
 		}
-		if (s[i - 1] == ')' || s[i - 1] == '(')
+		if ((s[i - 1] == ')' || s[i - 1] == '(') &&
+			(s[i] != ')' && s[i] != '('))
 		{
 			s[i] = (char) toupper((int)s[i]);
 		}
-		if (s[i - 1] == '{' || s[i - 1] == '}')
+		if ((s[i - 1] == '{' || s[i - 1] == '}') &&
+			(s[i] != '{' && s[i] != '}'))
 		{
 			s[i] = (char) toupper((int)s[i]);
 		}
-		if (s[i - 1] == 0 || s[i - 1] == '\n')
+		if ((s[i - 1] == 0 || s[i - 1] == '\n') &&
+			(s[i] != 0 && s[i] != '\n'))
 		{
 			s[i] = (char) toupper((int)s[i]);
 		}

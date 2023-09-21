@@ -13,28 +13,23 @@ char *leet(char *s)
 {
 	int i = 0;
 
+	char alpa[26] = {
+		'4', 'B', 'B', 'D', '3', 'F',
+		'G', 'H', 'I', 'J', 'K', '1',
+		'M', 'N', '0', 'P', 'Q', 'R',
+		'S', '7', 'U', 'V', 'W', 'X',
+		'Y', 'Z'
+	};
+
 	while (s[i] != '\0')
 	{
-		if (s[i] == 'a' || s[i] == 'A')
+		char d = s[i];
+		int place = d - 'a';
+
+		if (place >= 0 && place < 26)
 		{
-			s[i] = '4';
+			s[i] =  alpa[place];
 		}
-		if (s[i] == 'e' || s[i] == 'E')
-                {       
-                        s[i] = '3';
-		}
-		if (s[i] == 'o' || s[i] == 'O')
-                {
-                        s[i] = '0';
-                }
-		if (s[i] == 't' || s[i] == 'T')
-                {
-                        s[i] = '7';
-		}
-		if (s[i] == 'l' || s[i] == 'L')
-                {
-                        s[i] = '1';
-                }
 		i++;
 	}
 	return (s);
