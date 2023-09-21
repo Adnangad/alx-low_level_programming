@@ -13,7 +13,7 @@ char *string_toupper(char *s)
 
 	while (s[i] != '\0')
 	{
-		s[i] = (char) toupper ((int) s[i]);
+		s[i] = (char) toupper((int)s[i]);
 
 		i++;
 	}
