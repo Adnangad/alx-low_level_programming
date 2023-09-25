@@ -4,8 +4,7 @@
 
 /**
  * print_chessboard - prints chessboard
- * *a:array rep chessboard
- * @8:number of rows
+ * *a:array rep chessboard 
  *
  * Return:None.
  */
@@ -14,7 +13,7 @@ void print_chessboard(char (*a)[8])
 	int i;
 	int j;
 
-	for (i =0; i < 8; i++)
+	for (i = 0; i < 8; i++)
 	{
 		for (j = 0; j < 8; j++)
 		{
