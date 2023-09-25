@@ -5,7 +5,7 @@
 /**
  * print_chessboard - prints chessboard
  * *a:array called a
- * @[8]:no of elements
+ * @8:no of elements
  *
  * Return:none.
  */
