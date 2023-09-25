@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _strspn:gets length of prefix substring
+ * _strspn - gets length of prefix substring
  * @s:string
  * @accept:prefix substring
  *
