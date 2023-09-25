@@ -4,10 +4,10 @@
 
 /**
  * print_chessboard - prints chessboard
- * *a:array called a
- * @8:no of elements
+ * *a:array rep chessboard
+ * @8:number of rows
  *
- * Return:none.
+ * Return:None.
  */
 void print_chessboard(char (*a)[8])
 {
