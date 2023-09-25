@@ -4,9 +4,9 @@
 
 /**
  * print_chessboard - prints chessboard
- * *a:array rep chessboard 
+ * @a:array rep chessboard
  *
- * Return:None.
+ * Return:none.
  */
 void print_chessboard(char (*a)[8])
 {
