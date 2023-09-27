@@ -4,7 +4,7 @@
  * factorial - gets factorial of given int
  * @n:int whose factorial is to be found
  *
- * Return:-1 if n is lower than 0.
+ * Return:sometimes 1, - 1, or n.
  */
 int factorial(int n)
 {
