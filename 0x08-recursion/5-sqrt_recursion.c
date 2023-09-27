@@ -1,7 +1,6 @@
 #include "main.h"
 #include <math.h>
 
-
 /**
  *  actual - finds the squareroot
  *  @n:number to be det
@@ -24,7 +23,6 @@ int actual(int n, int square)
 		return (actual(n + 1, square));
 	}	
 }
-
 /**
  * _sqrt_recursion - finds squareroot
  * @n:number whose squareroot is to be found
