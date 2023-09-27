@@ -21,7 +21,7 @@ int actual(int n, int square)
 	}
 	else
 	{
-		return actual(n + 1, square);
+		return (actual(n + 1, square));
 	}	
 }
 
@@ -33,5 +33,5 @@ int actual(int n, int square)
  */
 int _sqrt_recursion(int n)
 {
-	return actual(1, n);
+	return (actual(1, n));
 }
