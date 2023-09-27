@@ -1,31 +1,30 @@
 #include "main.h"
-#include <math.h>
 
 /**
- *  actual - finds the squareroot
- *  @n:number to be det
- *  @square:no to check
+ * actual - finds squareroot
+ * @n:no to be checked
+ * @sq:no to check
  *
- *  Return:-1 if no squareroot
+ * Return:-1 if no sqroot
  */
-int actual(int n, int square)
+int actual(int n, int sq)
 {
-	if (n * n == square)
+	if (n * n == sq)
 	{
 		return (n);
 	}
-	else if (square < n * n)
+	else if (sq < n * n)
 	{
 		return (-1);
 	}
 	else
 	{
-		return (actual(n + 1, square));
-	}	
+		return (actual(n + 1, sq));
+	}
 }
 /**
  * _sqrt_recursion - finds squareroot
- * @n:number whose squareroot is to be found
+ * @n:no whose squareroot is to be found
  *
  * Return:actual.
  */
