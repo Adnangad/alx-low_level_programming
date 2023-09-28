@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
  * is_prime_number - checks for prime no
  * @n:int to be checked
@@ -8,12 +9,19 @@
  */
 int is_prime_number(int n)
 {
-	if (n / n == 1 && n / 1 == n)
-	{
-		return (1);
-	}
-	else
+	int i = 3;
+
+	if (n <= 1)
 	{
 		return (0);
 	}
+	while (i * i <= n)
+	{
+		if (n % i == 0)
+		{
+			return (0);
+		}
+		i++;
+	}
+	return (1);
 }
