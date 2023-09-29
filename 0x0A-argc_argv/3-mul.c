@@ -13,6 +13,11 @@ int main(int argc, char *argv[])
 	int i = 1;
 	int mul = 1;
 
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
 	if (argc > 1)
 	{
 		while (i < argc)
@@ -21,11 +26,6 @@ int main(int argc, char *argv[])
 			i++;
 		}
 		printf("%d\n", mul);
-	}
-	else
-	{
-		printf("Error\n");
-		return (1);
 	}
 	return (0);
 }
