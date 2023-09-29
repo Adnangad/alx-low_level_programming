@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - prints the no of arg
@@ -10,27 +11,39 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 1;
+	int i,j;
 	int sum = 0;
 	int nom;
 
-	if (argc > 1)
+	if (argc == 1)
 	{
-		while (i < argc)
+		printf("0\n");
+	}
+	else
+	{
+		for (i = 1; i < argc; i++)
 		{
 			nom = atoi(argv[i]);
+
+			j = 0;
+
+			while (argv[i][j] != '\0')
+			{
+				if (!isdigit(argv[i][j]))
+				{
+					printf("Error\n");
+					return (1);
+				}
+				j++;
+			}
+			if (nom < 0)
+			{
+				printf("Error\n");
+				return (1);
+			}
 			sum += nom;
-			i++;
 		}
-		if (nom >= 'a' || nom <= 'z')
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-		{
-			printf("%d\n", sum);
-		}
+		printf("%d\n", sum);
 	}
 	return (0);
 }
