@@ -33,23 +33,24 @@ int main(int argc, char *argv[])
 			i++;
 		}
 		while (coin >= 10)
-                {
-                        coin -= 10;
-                        i++;
-                }
+		{
+			coin -= 10;
+			i++;
+		}
 		while (coin >= 5)
-                {
-                        coin -= 5;
-                        i++;
-                }
+		{
+			coin -= 5;
+			i++;
+		}
 		while (coin >= 2)
-                {
-                        coin -= 2;
-                        i++;
-                }
+		{
+			coin -= 2;
+			i++;
+		}
 		i += coin;
 
 		printf("%d\n", i);
 	}
 	return (0);
 }
+		
