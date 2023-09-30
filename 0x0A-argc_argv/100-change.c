@@ -10,14 +10,14 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
+	int i,coin;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	int coin = atoi(argv[1]);
+	coin = atoi(argv[1]);
 
 	if (coin < 0)
 	{
@@ -27,14 +27,26 @@ int main(int argc, char *argv[])
 	{
 		i = 0;
 
-		i += coin / 25;
-		i %= 25;
-		i += coin / 10;
-                i %= 10;
-		i += coin / 5;
-                i %= 5;
-		i += coin / 2;
-                i %= 2;
+		while (coin >= 25)
+		{
+			coin -= 25;
+			i++;
+		}
+		while (coin >= 10)
+                {
+                        coin -= 10;
+                        i++;
+                }
+		while (coin >= 5)
+                {
+                        coin -= 5;
+                        i++;
+                }
+		while (coin >= 2)
+                {
+                        coin -= 2;
+                        i++;
+                }
 		i += coin;
 
 		printf("%d\n", i);
