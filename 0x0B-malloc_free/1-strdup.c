@@ -10,17 +10,20 @@
  */
 char *_strdup(char *str)
 {
-	int size = strlen(str) + 1;
-	char *duplicate = (char *)malloc(size * sizeof(char));
+	int size;
+	char *duplicate;
+
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	size = strlen(str) + 1;
+	duplicate = (char *)malloc(size * sizeof(char));
 
 	if (duplicate == NULL)
 	{
 		return (NULL);
 	}
-	strdup(str);
-	if (str == NULL)
-	{
-		return (NULL);
-	}
+	strcpy(duplicate, str);	
 	return (duplicate);
 }
