@@ -24,6 +24,10 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
+	else if (size == 0)
+	{
+		return (NULL);
+	}
 	else
 	{
 		return (p);
