@@ -30,6 +30,11 @@ int **alloc_grid(int width, int height)
 
 		if (point[i] == NULL)
 		{
+			for (j = 0; j < i; j++)
+			{
+				free(point [j]);
+			}
+			free(point);
 			return (NULL);
 		}
 		for (j = 0; j < width; j++)
