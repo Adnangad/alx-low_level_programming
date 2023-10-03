@@ -10,9 +10,10 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int i, j, **point;
+	int size, k, i, j, **point;
+	size = width * height;
 
-	if (width <= 0 || height <= 0)
+	if (size <= 0)
 	{
 		return (NULL);
 	}
@@ -39,7 +40,10 @@ int **alloc_grid(int width, int height)
 	}
 	for (j = 0; j < height; j++)
 	{
-		point[i][j] = 0;
+		for (k = 0; k < width; k++)
+		{
+			point[j][k] = 0;
+		}
 	}
 	return (point);
 }
