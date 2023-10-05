@@ -14,9 +14,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	int size = strlen(s1) + strlen(s2) + 1;
 	char *pointer;
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
-		return "";
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
 	}
 	pointer = (char *)malloc(size * sizeof(char));
 
