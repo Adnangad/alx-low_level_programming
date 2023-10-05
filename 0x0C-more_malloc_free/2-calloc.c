@@ -10,9 +10,14 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *point = (void *)calloc(nmemb, size);
+	void *point;
+	if (nmemb == 0 || size == 0)
+	{
+		return (NULL);
+	}
+	point = (void *)calloc(nmemb, size);
 
-	if (size == 0 || nmemb == 0)
+	if (point == NULL)
 	{
 		return (NULL);
 	}
