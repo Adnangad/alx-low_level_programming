@@ -11,6 +11,7 @@
 int *array_range(int min, int max)
 {
 	int *point, i;
+
 	int size = max - min + 1;
 
 	if (min > max)
