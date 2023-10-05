@@ -33,7 +33,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		strcat(pointer, s2);
 	}
-	else
+	else if (n < strlen(s2))
 	{
 		strncat(pointer, s2, n);
 	}
