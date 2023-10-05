@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * _calloc - allocates mem of an array
@@ -15,11 +16,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	point = (void *)calloc(nmemb, size);
+	point = (void *)malloc(nmemb * size);
 
 	if (point == NULL)
 	{
 		return (NULL);
 	}
+	memset(point, 0, nmemb * size);
 	return (point);
 }
