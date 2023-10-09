@@ -8,13 +8,13 @@
  * @age:dogs age
  * @owner:dogs owner
  *
- * Return:new.
+ * Return:none.
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	int size_name = strlen(name) + 1;
 	int size_own = strlen(owner) + 1;
-	char *inew_na = malloc(size_name);
+	char *new_na = malloc(size_name);
 	char *new_ow = malloc(size_own);
 	dog_t *new = malloc(sizeof(dog_t *));
 
