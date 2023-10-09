@@ -12,27 +12,27 @@
  * Description:initializes struct dog with provided data
  *
  */
-void init_dog(struct dog *d, char* name, float age, char* owner)
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d != NULL)
 	{
 		if (name == NULL)
 		{
-			d -> name = NULL;
+			d->name = NULL;
 		}
 		else
 		{
-			d -> name = strdup(name);
+			d->name = strdup(name);
 		}
-		d -> age = age;
+		d->age = age;
 
 		if (owner == NULL)
 		{
-			d -> owner = NULL;
+			d->owner = NULL;
 		}
 		else
 		{
-			d -> owner = strdup(owner);
+			d->owner = strdup(owner);
 		}
 	}
 }
