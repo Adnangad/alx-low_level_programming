@@ -12,16 +12,26 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
+	char *new_ow, *new_na;
 	int size_name = strlen(name) + 1;
 	int size_own = strlen(owner) + 1;
-	char *new_na = malloc(size_name);
-	char *new_ow = malloc(size_own);
 	dog_t *new = malloc(sizeof(dog_t *));
 
-	if (new_na == NULL || new_ow == NULL || new == NULL)
+	if (new == NULL)
 	{
-		free(new);
+		return (NULL);
+	}
+	new_na = malloc(size_name);
+
+	if (new_na == NULL)
+	{
 		free(new_na);
+		return (NULL);
+	}
+	new_ow = malloc(size_own);
+
+	if (new_ow == NULL)
+	{
 		free(new_ow);
 		return (NULL);
 	}
