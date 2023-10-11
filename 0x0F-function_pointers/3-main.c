@@ -20,12 +20,15 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	if (argc == 4)
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+	si = argv[2];
+	sign = get_op_func(si);
+
+	if ((si == '/' || si == '%') && num2 == 0)
 	{
-		num1 = atoi(argv[1]);
-		num2 = atoi(argv[3]);
-		si = argv[2];
-		sign = get_op_func(si);
+		printf("Error\n");
+		exit(100);
 	}
 	if (!sign)
 	{
