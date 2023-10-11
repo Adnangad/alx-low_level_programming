@@ -15,22 +15,24 @@ int main(int argc, char *argv[])
 	char *si;
 	int (*sign)(int, int);
 
-	if (argc == 4)
-	{
-		num1 = atoi(argv[1]);
-		num2 = atoi(argv[3]);
-		si = argv[2];
-		sign = get_op_func(si);
-	}
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+	sign = get_op_func(argv[2]);
+
 	if (!sign)
 	{
 		printf("Error\n");
 		exit(99);
+	}
+	if ((*argv[2] == '/' || *argv[2] == '%') && num2 == 0)
+	{
+		printf("Error\n");
+		exit(100);
 	}
 	answer = sign(num1, num2);
 
