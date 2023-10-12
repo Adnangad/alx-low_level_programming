@@ -19,14 +19,14 @@ int sum_them_all(const unsigned int n, ...)
 	else
 	{
 		va_list name;
-		va_start(name, n);
+		va_start (name, n);
 
 		for (i = 0; i < n; i++)
 		{
-			x = va_arg(name, unsigned int);
+			x = va_arg (name, unsigned int);
 			sum += x;
 		}
-		va_end(name);
+		va_end (name);
 		return (sum);
 	}
 }
