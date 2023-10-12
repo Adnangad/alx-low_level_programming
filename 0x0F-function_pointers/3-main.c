@@ -25,12 +25,7 @@ int main(int argc, char *argv[])
 	si = argv[2];
 	sign = get_op_func(si);
 
-	if ((si == '/' || si == '%') && num2 == 0)
-	{
-		printf("Error\n");
-		exit(100);
-	}
-	if (!sign)
+	if (sign == NULL)
 	{
 		printf("Error\n");
 		exit(99);
