@@ -31,8 +31,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			printf("%s\n", x);
+			printf("%s", x);
 		}
 	}
 	va_end (str);
+	printf("\n");
 }
