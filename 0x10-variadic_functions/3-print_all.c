@@ -41,11 +41,11 @@ void print_all(const char * const format, ...)
 				break;
 			default:
 				i++;
-				continue;
+			continue;
 		}
 		spr = ", ";
 		i++;
 	}
-	printf("\n");
 	va_end(print);
+	printf("\n");
 }
