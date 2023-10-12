@@ -52,7 +52,7 @@ int op_div(int a, int b)
 	return (a / b);
 }
 /**
- * op_modd - finds mod of two int
+ * op_mod - finds mod of two int
  * @a:first int
  * @b:second int
  *

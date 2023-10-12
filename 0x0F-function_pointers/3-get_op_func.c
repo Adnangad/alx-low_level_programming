@@ -6,7 +6,7 @@
  * get_op_func - selects the correct func to perform the operation
  * @s:operator passed to the argument
  *
- * Return:wait
+ * Return:Null.
  */
 int (*get_op_func(char *s))(int, int)
 {
