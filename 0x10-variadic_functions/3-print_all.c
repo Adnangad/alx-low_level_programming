@@ -17,7 +17,7 @@ void print_all(const char * const format, ...)
 	va_list print;
 
 	va_start(print, format);
-	while (format[i] && format)
+	while (format && format[i])
 	{
 		switch (format[i])
 		{
