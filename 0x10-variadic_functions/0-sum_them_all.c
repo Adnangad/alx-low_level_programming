@@ -19,6 +19,7 @@ int sum_them_all(const unsigned int n, ...)
 	else
 	{
 		va_list name;
+
 		va_start(name, n);
 		for (i = 0; i < n; i++)
 		{
