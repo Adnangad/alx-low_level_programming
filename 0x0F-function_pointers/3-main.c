@@ -12,7 +12,6 @@
 int main(int argc, char *argv[])
 {
 	int num1, num2, answer;
-	char *si;
 	int (*sign)(int, int);
 
 	if (argc != 4)
@@ -22,15 +21,13 @@ int main(int argc, char *argv[])
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	si = argv[2];
-	sign = get_op_func(si);
-
+	sign = get_op_func(argv[2]);
 	if (sign == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	answer = sign(num1, num2);
+	answer = (*sign)(num1, num2);
 
 	printf("%d\n", answer);
 	return (0);
