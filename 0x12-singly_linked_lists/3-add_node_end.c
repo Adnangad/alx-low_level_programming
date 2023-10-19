@@ -2,10 +2,10 @@
 
 /**
  * add_node_end - adds node at end of a list
- * @head:pointer to poniter
+ * @head:pointer to pointer
  * @str:value to be placed
  *
- * Return:address of new element
+ * Return:address of new element.
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
