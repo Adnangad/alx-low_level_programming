@@ -5,7 +5,7 @@
  * @head:pointer to pointer of head
  * @index:position of the node
  *
- * return:nth node of linked list
+ * Return:nth node of linked list
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
