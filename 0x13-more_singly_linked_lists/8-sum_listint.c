@@ -13,7 +13,7 @@ int sum_listint(listint_t *head)
 
 	if (head == NULL)
 	{
-		printf("NULL");
+		return (0);
 	}
 	while (help->next != NULL)
 	{
@@ -21,9 +21,5 @@ int sum_listint(listint_t *head)
 		help = help->next;
 	}
 	sum += help->n;
-	if (help == NULL)
-	{
-		return (0);
-	}
 	return (sum);
 }
