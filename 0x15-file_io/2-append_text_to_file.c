@@ -23,7 +23,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	}
 	if (text_content == NULL)
 	{
-		fclose(app);
+		return (1);
 	}
 	fprintf(app, "%s", text_content);
 	fclose(app);
