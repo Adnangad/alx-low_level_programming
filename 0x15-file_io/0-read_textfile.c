@@ -11,7 +11,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	FILE *new;
 	char buf[1000];
-	ssize_t writen, total = 0;
+	ssize_t  total = 0;
 	size_t len;
 
 	if (filename == NULL)
@@ -27,16 +27,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	while (fgets(buf, sizeof(buf), new) != NULL)
 	{
 		len = strlen(buf);
-		writen = fwrite(buf, 1, len, stdout);
-
-		if (writen != (ssize_t)len)
-		{
-			fclose(new);
-			return (0);
-		}
 		total += len;
 
-		if (total >= (ssize_t)letters)
+		if (total <= (ssize_t)letters)
+		{
+			printf("%s", buf);
+		}
+		else
 		{
 			break;
 		}
