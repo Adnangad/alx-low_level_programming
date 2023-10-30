@@ -41,7 +41,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 			break;
 		}
 	}
-	total -= 1;
 	fclose(new);
 	return (total);
 }
