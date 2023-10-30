@@ -24,7 +24,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	while (fgets(buf, sizeof(buf), new))
+	while (fgets(buf, sizeof(buf), new) != NULL)
 	{
 		len = strlen(buf);
 		writen = fwrite(buf, 1, len, stdout);
