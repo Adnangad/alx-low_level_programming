@@ -6,7 +6,7 @@ OBJ = $(SRC:.c=.o)
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 clean:
-	$(RM) *.swp *~
+	$(RM) *.swp $(NAME)
 oclean: $(OBJ)
 	$(RM) $(OBJ)
 fclean: clean oclean
